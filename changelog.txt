@@ -1,0 +1,27 @@
+# Changelog
+
+    0.2.2
+        ^ Accept Svg From Flaticon
+
+    0.2.1
+	    ^ Change pot-file for i10n
+	    + Add Translate Files for Russian
+
+    0.2.0
+	    + Add pot-file for i10n
+
+    0.1.0
+	    + Add Modal to Elementor
+
+    0.0.1
+	    + Initial Release
+
+
+
+	* -> Security Fix
+	# -> Bug Fix
+	$ -> Language fix or change
+	+ -> Addition
+	^ -> Change
+	- -> Removed
+	! -> Note

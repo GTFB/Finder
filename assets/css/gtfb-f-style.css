@@ -1,0 +1,191 @@
+body.media_page_gtfb-f-media #wpcontent {
+    padding-left: 0;
+    padding-bottom: 40px;
+}
+
+.gtfbis-attachments-browser .GTFB_F_media_container .GTFB_F_header,
+body.media_page_gtfb-f-media #wpcontent .GTFB_F_media_container .GTFB_F_header {
+    background: #f1f1f1 url(../img/logo.svg) no-repeat 25px 20px;
+    padding: 20px 25px 20px 83px;
+    overflow: hidden;
+    border-bottom: 1px solid #efefef;
+    position: relative;
+}
+
+.gtfbis-attachments-browser .GTFB_F_media_container .GTFB_F_header h1 ,
+body.media_page_gtfb-f-media #wpcontent .GTFB_F_media_container .GTFB_F_header h1 {
+    padding: 0;
+    margin: 4px 0 0;
+    font-weight: 700;
+    font-size: 26px;
+    max-width: 70%;
+}
+
+.gtfbis-attachments-browser .GTFB_F_media_container .GTFB_F_header h1 span ,
+body.media_page_gtfb-f-media #wpcontent .GTFB_F_media_container .GTFB_F_header h1 span {
+    display: block;
+    padding: 8px 0 0;
+    color: #888;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.gtfbis-attachments-browser .GTFB_F_media_container .GTFB_F_source_panel ,
+body.media_page_gtfb-f-media #wpcontent .GTFB_F_media_container .GTFB_F_source_panel {
+    background: #f7f7f7;
+    padding: 5px 25px 5px 25px;
+    overflow: hidden;
+    border-bottom: 1px solid #efefef;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.gtfbis-attachments-browser .GTFB_F_media_container .GTFB_F_source_panel div ,
+body.media_page_gtfb-f-media #wpcontent .GTFB_F_media_container .GTFB_F_source_panel div {
+    display: flex;
+    align-items: center;
+}
+
+.gtfbis-attachments-browser.GTFB_F_media_container .GTFB_F_source_panel span,
+body.media_page_gtfb-f-media #wpcontent .GTFB_F_media_container .GTFB_F_source_panel span{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding-right: 10px;
+    width: 100%;
+}
+
+.gtfbis-attachments-browser .GTFB_F_media_container .GTFB_F_source_panel #GTFB_F_source_input,
+body.media_page_gtfb-f-media #wpcontent .GTFB_F_media_container .GTFB_F_source_panel #GTFB_F_source_input{
+    display: flex;
+    max-width: 200px;
+}
+
+.gtfbis-attachments-browser .GTFB_F_media_container .GTFB_F_source_panel input ,
+body.media_page_gtfb-f-media #wpcontent .GTFB_F_media_container .GTFB_F_source_panel input {
+    height: 28px;
+}
+
+.gtfbis-attachments-browser #wpcontent .GTFB_F_media_container .GTFB_F_source_panel #GTFB_F_search_input ,
+body.media_page_gtfb-f-media #wpcontent .GTFB_F_media_container .GTFB_F_source_panel #GTFB_F_search_input {
+    margin-right: 10px;
+    width: 300px;
+}
+
+.gtfbis-attachments-browser .GTFB_F_media_container .GTFB_F_result_panel,
+body.media_page_gtfb-f-media #wpcontent .GTFB_F_media_container .GTFB_F_result_panel{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px 25px 5px 25px;
+}
+
+.gtfbis-attachments-browser .GTFB_F_media_container .GTFB_F_more_result_panel,
+body.media_page_gtfb-f-media #wpcontent .GTFB_F_media_container .GTFB_F_more_result_panel{
+    display: flex;
+    align-items: center;
+    padding: 5px 25px 5px 25px;
+    justify-content: center;
+}
+
+.gtfbis-attachments-browser .GTFB_F_media_container .GTFB_F_result_panel .GTFB_F_item.GTFB_F_icon,
+body.media_page_gtfb-f-media #wpcontent .GTFB_F_media_container .GTFB_F_result_panel .GTFB_F_item.GTFB_F_icon{
+    width: 148px;
+    height: 148px;
+    padding: 10px;
+}
+
+.gtfbis-attachments-browser .GTFB_F_media_container .GTFB_F_result_panel .GTFB_F_item.GTFB_F_icon .GTFB_F_icon_container,
+body.media_page_gtfb-f-media #wpcontent .GTFB_F_media_container .GTFB_F_result_panel .GTFB_F_item.GTFB_F_icon .GTFB_F_icon_container {
+    height: 128px;
+    width: 128px;
+    text-align: center;
+    position: relative;
+    display: inline-block;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+}
+
+.gtfbis-attachments-browser .GTFB_F_media_container .GTFB_F_result_panel .GTFB_F_item,
+body.media_page_gtfb-f-media #wpcontent .GTFB_F_media_container .GTFB_F_result_panel .GTFB_F_item{
+    position: relative;
+    display: inline-block;
+    width: 25%;
+    height: 150px;
+    text-align: center;
+    border: 1px solid #fff;
+    float: left;
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+}
+
+.gtfbis-attachments-browser .GTFB_F_media_container .GTFB_F_result_panel .GTFB_F_item span,
+body.media_page_gtfb-f-media #wpcontent .GTFB_F_media_container .GTFB_F_result_panel .GTFB_F_item span{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 0 4px;
+    color: #fff;
+    font-size: 10px;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 10;
+}
+
+.gtfbis-attachments-browser .GTFB_F_media_container .GTFB_F_result_panel .GTFB_F_item .GTFB_F_item_overlay ,
+body.media_page_gtfb-f-media #wpcontent .GTFB_F_media_container .GTFB_F_result_panel .GTFB_F_item .GTFB_F_item_overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 997;
+    display: none;
+    cursor: pointer;
+    color: #fff;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.gtfbis-attachments-browser .GTFB_F_media_container .GTFB_F_result_panel .GTFB_F_item:hover .GTFB_F_item_overlay ,
+body.media_page_gtfb-f-media #wpcontent .GTFB_F_media_container .GTFB_F_result_panel .GTFB_F_item:hover .GTFB_F_item_overlay {
+    display: block;
+}
+
+.gtfbis-attachments-browser .GTFB_F_media_container .GTFB_F_result_panel .GTFB_F_item ,
+body.media_page_gtfb-f-media #wpcontent .GTFB_F_media_container .GTFB_F_result_panel .GTFB_F_item {
+    height: 300px;
+}
+
+.media-frame .attachments-browser.gtfbis-attachments-browser{
+    overflow: auto;
+}
+
+
+@media screen and (max-width: 1024px) {
+    .gtfbis-attachments-browser .GTFB_F_media_container .GTFB_F_result_panel .GTFB_F_item ,
+    body.media_page_gtfb-f-media #wpcontent .GTFB_F_media_container .GTFB_F_result_panel .GTFB_F_item {
+        width: 50%;
+        height: 200px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .gtfbis-attachments-browser .GTFB_F_media_container .GTFB_F_result_panel .GTFB_F_item ,
+    body.media_page_gtfb-f-media #wpcontent .GTFB_F_media_container .GTFB_F_result_panel .GTFB_F_item {
+        width: 100%;
+        height: 150px;
+    }
+}
+
+
+
+
