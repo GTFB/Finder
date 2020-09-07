@@ -1,20 +1,10 @@
 <?php
-/**
- * Date: 30.06.2019
- * Time: 15:57
- * @property GTFB_Finder_Loader _instance
- */
 
-class GTFB_Finder_Loader
+class Finder_Loader
 {
-  /**
-   * @var $_instance GTFB_Finder_Loader
-   */
+
   private static $_instance;
 
-  /**
-   * @return GTFB_Finder_Loader
-   */
   public static function instance()
   {
     if ( is_null( self::$_instance ) ) {
@@ -40,7 +30,7 @@ class GTFB_Finder_Loader
       'tabTitle' => __( 'GTFB Image Search', 'gtfb-f' ),
     ];
 
-    $plugin = gtfbFinder::instance();
+    $plugin = Finder::instance();
 
     ob_start();
     $plugin->GTFB_F_media_menu();

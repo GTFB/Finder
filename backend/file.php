@@ -55,12 +55,26 @@ class gtfbIsFile
 
     // Create temp. image variables
 
-    $ext = wp_check_filetype( $url );
+    $ext = wp_check_filetype($url);
+
+    if(strpos($url, 'unsplash')) {
+      $paramsQuery = explode("&", parse_url($url)["query"]);
+        $params = [];
+        foreach($paramsQuery as $param){
+            $tempParam = explode("=", $param);
+            $params[$tempParam[0]] = $tempParam[1];
+        }
+        
+        if(array_key_exists('fm', $params)){
+            $ext["ext"] = $params["fm"];
+        }
+    }
 
     if ( ! $ext["ext"] ) {
       $response =
         array(
           'error' => true,
+          'url' => $url,
           'msg' => __( 'Невозможно сохранить картинку, wp не поддерживает данный тип файла', 'gtfb-f' )
 
       );
@@ -95,6 +109,7 @@ class gtfbIsFile
             'error' => false,
             'msg' => __( 'Image uploaded successfully', 'gtfb-f' ),
             'path' => $path,
+            'img_path' => $img_path,
             'filename' => $filename
           );
         } else {
@@ -146,8 +161,7 @@ class gtfbIsFile
       $alt = $params["alt"];
       $caption = $params["caption"];
       $custom_filename = $params["custom_filename"];
-
-      $name = ( ! empty( $custom_filename ) ) ? $custom_filename . '.' . $filetype["ext"] : $name;
+      $name = ( ! empty( $custom_filename ) ) ? $custom_filename : $name;
 
       $image = wp_get_image_editor( $filename );
       if ( ! is_wp_error( $image ) ) {
@@ -163,6 +177,11 @@ class gtfbIsFile
       if ( ! $copy_file ) {
         // Error
         $response = array(
+          'path' => $path,
+          'name' => $name,
+          'test' => $copy_file,
+          'filename' => $filename,
+          'new_filename' => $new_filename,
           'success' => false,
           'msg' => __( 'Unable to copy image to the media library. Please check your server permissions.', 'gtfb-f' )
         );

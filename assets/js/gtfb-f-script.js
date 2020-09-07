@@ -289,11 +289,11 @@ jQuery(document).ready(function ($) {
         var img_id = '';
         var img_title = '';
         var img_id = "unsplash_" + data.results[i].id;
-
-        var img_ext = '';//data.results[i].src.original.split( '.' ).pop().toUpperCase().substring( 0, 4 );
+        var urlParams = new URL(data.results[i].urls.full).searchParams;
+        var img_ext = urlParams.get('fm');//data.results[i].src.original.split( '.' ).pop().toUpperCase().substring( 0, 4 );
         var img_site = data.results[i].links.html;
         var img_thumb = data.results[i].urls.thumb;
-        var img_full = data.results[i].links.download;
+        var img_full = data.results[i].urls.full;
         var img_width = data.results[i].width;
         var img_height = data.results[i].height;
         if (data.results[i].user != undefined) {
@@ -362,6 +362,7 @@ jQuery(document).ready(function ($) {
       },
     });
   }
+  
 
   function GTFB_F_show_flaticon_images(data, page) {
     if (data.data != 'undefined') {
@@ -469,7 +470,7 @@ jQuery(document).ready(function ($) {
           img_ext: img_ext,
           img_site: img_site,
           img_thumb: img_thumb,
-          img_full: img_full,
+          img_full: img_thumb,
           img_width: img_width,
           img_height: img_height,
           img_title: img_title,
@@ -549,6 +550,7 @@ jQuery(document).ready(function ($) {
       method: 'POST',
       url: GTFB_F_script_vars.GTFB_F_script_root + "gtfb-f/resize/",
       data: data,
+      dataType: 'text',
       success: function (response) {
         if(window.GTFBIsUploader){
           window.GTFBIsUploader.model.frame.content.mode("browse");
@@ -559,9 +561,8 @@ jQuery(document).ready(function ($) {
         }
         $(el).text('OK');
       },
-      error: function () {
+      error: function (response) {
         $(el).text(GTFB_F_script_vars['Error']);
-        console.log('error');
       }
     });
   }

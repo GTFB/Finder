@@ -29,6 +29,9 @@ e.g.
 
 == Changelog ==
 
+= 1.0.0 =
+* Bugs fix and rename plugin
+
 = 0.2.2 =
 * Accept Svg From Flaticon
 
