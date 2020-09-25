@@ -74,7 +74,7 @@ if ( ! class_exists( 'Finder' ) ) {
 
     //Добавляем меню
     function GTFB_F_menu() {
-      add_submenu_page( 'upload.php', esc_html__( 'AWP / Finder', 'gtfb-f' ), esc_html__( 'AWP / Finder', 'gtfb-f' ), 'manage_options', 'gtfb-f-media', array(
+      add_submenu_page( 'upload.php', esc_html__( 'Finder', 'gtfb-f' ), esc_html__( 'Finder', 'gtfb-f' ), 'manage_options', 'gtfb-f-media', array(
         $this,
         'GTFB_F_media_menu'
       ));
