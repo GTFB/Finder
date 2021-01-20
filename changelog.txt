@@ -1,5 +1,8 @@
 # Changelog
 
+	1.0.1
+		^ Bug fix Pexels and edit count get images to 25
+
 	1.0.0
 		^ Bugs fix and rename plugin
 

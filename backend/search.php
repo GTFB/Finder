@@ -40,19 +40,19 @@ class gtfbIsSearch {
         $query_params = array(
             "query" => esc_attr( $key ),
             "page" => $page,
-            "per_page" => 12,
+            "per_page" => 25,
         );
         
         if($key) {
-            curl_setopt( $ch, CURLOPT_URL, 'http://api.pexels.com/v1/search?' . http_build_query($query_params));
+            curl_setopt( $ch, CURLOPT_URL, 'https://api.pexels.com/v1/search?' . _http_build_query($query_params));
         }
         else {
-            curl_setopt( $ch, CURLOPT_URL, 'http://api.pexels.com/v1/popular?per_page=8&page=1' );
+            curl_setopt( $ch, CURLOPT_URL, 'https://api.pexels.com/v1/search?query=popular&per_page=25&page=1' );
         }
+
             
         curl_setopt( $ch, CURLOPT_HTTPHEADER, array(
                 'Authorization: '.GTFB_F_PEXELS_KEY,
-                'Content-Type: application/json'
         ) );
         
         curl_setopt( $ch, CURLOPT_RETURNTRANSFER, true );
@@ -83,7 +83,7 @@ class gtfbIsSearch {
             "key" => esc_attr( GTFB_F_PIXABAY_KEY ),
             "q" => urlencode($q),
             "page" => $page,
-            "per_page" => 12,
+            "per_page" => 25,
         );
         
         if($q) {
@@ -118,7 +118,7 @@ class gtfbIsSearch {
             "query" => esc_attr( $q ),
             "page" => $page,
             "client_id" => esc_attr( GTFB_F_UNSPLASH_KEY ),
-            "per_page" => 12,
+            "per_page" => 25,
         );
         
         if($q) {

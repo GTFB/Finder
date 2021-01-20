@@ -3,7 +3,7 @@
  * Plugin Name: AWP / Finder
  * Plugin URI: https://allword.press
  * Description: This plugin search for pictures on some popular resources.
- * Version:     1.0.0
+ * Version:     1.0.1
  * Author: Allword.press
  * Author URI: https://allword.press
  * License:     GPL2
@@ -17,7 +17,7 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 
 $upload_dir = wp_upload_dir();
 
-define( 'GTFB_F_VERSION', '1.0.0' );
+define( 'GTFB_F_VERSION', '1.0.1' );
 define( 'GTFB_F_URI', plugin_dir_url(__FILE__));
 define( 'GTFB_F_UPLOAD_PATH', $upload_dir['basedir'].'/awp.finder');
 define( 'GTFB_F_UPLOAD_URL', $upload_dir['basedir'].'/awp.finder/');

@@ -24,17 +24,17 @@ jQuery(document).ready(function ($) {
     var source = $("#GTFB_F_source_input").val();
     if (source == "pexels") {
       var count = $(".GTFB_F_item").length;
-      var page = count / 12 + 1;
+      var page = count / 25 + 1;
       GTFB_F_pexels_search(page);
     }
     else if (source == "pixabay") {
       var count = $(".GTFB_F_item").length;
-      var page = count / 12 + 1;
+      var page = count / 25 + 1;
       GTFB_F_pixabay_search(page);
     }
     else if (source == "unsplash") {
       var count = $(".GTFB_F_item").length;
-      var page = count / 12 + 1;
+      var page = count / 25 + 1;
       GTFB_F_unsplash_search(page);
     }
     else if (source == "flaticon") {
@@ -121,7 +121,7 @@ jQuery(document).ready(function ($) {
 
       var count = $(".GTFB_F_item").length;
       var text = count + " / " + data.total_results
-      var per_page = 12;
+      var per_page = 25;
 
       jQuery('#GTFB_F_more_result_panel').empty();
       if (data.total_results - count > 0) {
@@ -237,7 +237,7 @@ jQuery(document).ready(function ($) {
 
       var count = $(".GTFB_F_item").length;
       var text = count + " / " + data.totalHits
-      var per_page = 12;
+      var per_page = 25;
 
       jQuery('#GTFB_F_more_result_panel').empty();
       if (data.totalHits - count > 0) {
@@ -328,7 +328,7 @@ jQuery(document).ready(function ($) {
 
       var count = $(".GTFB_F_item").length;
       var text = count + " / " + data.total
-      var per_page = 12;
+      var per_page = 25;
 
       jQuery('#GTFB_F_more_result_panel').empty();
       if (data.total - count > 0) {
@@ -410,7 +410,7 @@ jQuery(document).ready(function ($) {
 
       var count = $(".GTFB_F_item").length;
       var text = count + " / " + data.metadata.total
-      var per_page = 12;
+      var per_page = 25;
 
       jQuery('#GTFB_F_more_result_panel').empty();
       if (data.metadata.total - count > 0) {
